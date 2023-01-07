@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Patrick+Hand&family=Roboto+Mono&family=Rubik&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+
+header{
+    background-color: #232529;
+    width: 100vw;
+    height: 30vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    text-align: center;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #282c34;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fc3232;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e52e2e;
+  }
+
+.wave1{
+    background-image: url('./img/wave3.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+
+    height: 30vh;
+    width: 100vw;
+
+}
+
+.s{
+    height: 1000px;
+    width: 100vw;
+}
+
+.header{
+    width: 100vw;
+    height: 70px;
+    background-color: #232529;
+    padding: 5px 0;
+    position: fixed;
+    width: 95vw;
+    z-index: 2;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    width: 100vw;
+    height: 70px;
+
+}
+.header h1{
+    padding: 0 ;
+}
+.header li{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+}
+.header a{
+    text-decoration: none;
+    margin: 10px 10px;
+    color: white;
+    transition: all .2s ease;
+    font: 700 20px "Open Sans", sans-serif;
+    letter-spacing: -0.2px;
+    color: rgb(216, 216, 216);
+}
+.glowna{
+    color: #fff;
+}
+
+.header a:hover{
+    color: rgb(186, 186, 186);
+    font-size: 25px;
+}
+
+.sticky{
+    padding: 5px 0;
+    width: 100vw;
+    height: 70px;
+    -webkit-box-shadow: 0px 11px 24px -8px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 11px 24px -8px rgba(66, 68, 90, 1);
+    box-shadow: 0px 11px 24px -8px rgba(66, 68, 90, 1);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: #fff;
+
+}
+
+.navmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+        margin-right: 6vw;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navmenu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #232529;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        background: #232529;
+        margin-top: 10px;
+    }
+    .navitem{
+        margin: 16px 0;
+
+    }
+    .navmenu.active {
+        left: 0;
+    }
+
+    .logo{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.logo2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.main h1{
+    font-family: 'Neroko One', sans-serif;
+    font-size: 50px;
+    margin: 7px 0;
+}
+
+.main span{
+    text-align: center;
+    font-family: 'Neroko One', sans-serif;
+}
+
+.main{
+    width: 50vw;
+    color: #fff;
+    margin: -260px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.odd{
+    width: 100%;
+    height: 100px;
+}
+
+.main a{
+    margin-right: 0.5rem;
+    margin-bottom: 1.125rem;
+    margin-left: 0.5rem;
+    border-color: #fc3232;
+    background-color: #fc3232;
+    color: #fff;
+
+    display: inline-block;
+    padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+    border: 0.125rem solid #fc3232;
+    border-radius: 2rem;
+    background-color: #fc3232;
+    color: #fff;
+    font: 700 0.875rem/0 "Open Sans", sans-serif;
+    text-decoration: none;
+    transition: all 0.2s;
+    margin-top: 25px;
+}
+
+.main a:hover{
+    background-color: transparent;
+    color: #fc3232;
+}
+
+.buttons{
+    display: flex;
+}
+
+.funkcje{
+
+}
+
+.funkcje h1{
+    font-family: 'Neroko One', sans-serif;
+    font-size: 30px;
+    margin: 7px 0;
+    color: #fff;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards .card{
+    position: relative;
+    cursor: pointer;
+}
+
+.cards .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+
+}
+
+.cards .card .face.face1{
+    position: relative;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.cards .card:hover .face.face1{
+    background: #fc3232;
+    transform: translateY(0);
+}
+
+.cards .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.cards .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.cards .card .face.face1 .content .bi{
+    max-width: 100px;
+}
+
+.cards .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.cards .card .face.face2{
+    position: relative;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.cards .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.cards .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.serwery{
+    color: #fff;
+
+}
+
+.serwery h2{
+    color: #e52e2e;
+}
+
+.cards .card .face.face2 .content .p{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: 'Neroko One', sans-serif;
+}
+
+
+@property --num {
+    syntax: "<integer>";
+    initial-value: 50;
+    inherits: false;
+  }
+  
+  .serwery {
+    font: 800 30px system-ui;
+    padding: 2rem;
+  }
+
+  .counter{
+    animation: counter 2s ease-in-out;
+    counter-reset: num var(--num);
+  }
+
+  .counter::before {
+    content: counter(num);
+  }
+  
+  @keyframes counter {
+    0% {
+      --num: 0;
+    }
+    100% {
+      --num: 50;
+    }
+  }
+
+.komendy h1{
+    color: white;
+}
+
